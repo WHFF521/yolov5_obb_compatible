@@ -1,5 +1,6 @@
 # Yolov5 for Oriented Object Detection
 
+**我想重新搭建一遍环境但是发现还是不能编译，只有之前的环境可以编译，暂没有找到原因**
 由于torch和一些库有废弃不能用的函数，将代码中涉及到的函数进行了最小限度的更改。已经能够跑通train过程。
 
 # install
@@ -15,11 +16,11 @@ conda activate py39obb
 安装cuda
 ```shell
 # 更新pip
-py -m pip install --upgrade setuptools pip wheel
+pip install --upgrade setuptools pip wheel
 # 安装nvidia-pyindex
-py -m pip install nvidia-pyindex
+pip install nvidia-pyindex
 # 安装cuda12
-py -m pip install nvidia-cuda-runtime-cu12
+pip install nvidia-cuda-runtime-cu12
 ```
 
 安装cuda版本torch
@@ -40,7 +41,7 @@ python setup.py develop  #or "pip install -v -e ."
 
 ```shell
 pip uninstall numpy
-pip install numpy=1.23.0
+pip install numpy==1.23.0
 ```
 
 
