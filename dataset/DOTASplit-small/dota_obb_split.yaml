@@ -1,0 +1,24 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: dataset/DOTASplit-small # dataset root dir
+train: train_split_rate1.0_subsize1024_gap512/images #images   # train images (relative to 'path') 
+val: val_split_rate1.0_subsize1024_gap512/images #images  # val images (relative to 'path') 
+test: test_split_rate1.0_subsize1024_gap512/images  #images # test images (optional)
+
+# Classes
+nc: 16  # number of classes
+names: ['small-vehicle',
+        'storage-tank',
+        'large-vehicle',
+        'plane',
+        'ship',
+        'harbor',
+        'ground-track-field',
+        'soccer-ball-field',
+        'tennis-court',
+        'swimming-pool',
+        'baseball-diamond',
+        'roundabout',
+        'basketball-court',
+        'bridge',
+        'helicopter',
+        'container-crane']  # class names
