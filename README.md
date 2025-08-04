@@ -45,3 +45,9 @@ pip install numpy=1.23.0
 
 
 我所有的环境在`my_dependencies.txt`里面
+
+# 运行指令
+
+```shell
+python -W ignore train.py --weights weights/yolov5s.pt --data dataset/DOTASplit-small/dota_obb_split.yaml --epochs 1 --batch-size 8 --img 1024 --name test-dota-img1024-batch8-epoch1 --cache   --device 0
+```
