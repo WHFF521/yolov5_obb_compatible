@@ -2,3 +2,4 @@
 **/__pycache__/
 **/build
 **/nms_rotated.egg-info
+utils/nms_rotated/nms_rotated_ext.cpython-39-x86_64-linux-gnu.so
