@@ -1,6 +1,5 @@
 # Yolov5 for Oriented Object Detection
 
-**我想重新搭建一遍环境但是发现还是不能编译，只有之前的环境可以编译，暂没有找到原因**
 由于torch和一些库有废弃不能用的函数，将代码中涉及到的函数进行了最小限度的更改。已经能够跑通train过程。
 
 # install
@@ -34,7 +33,7 @@ pip install -r requirements.txt
 pip install ninja
 pip install pycocotools
 cd utils/nms_rotated
-python setup.py develop  #or "pip install -v -e ."
+python setup.py build_ext --inplace
 ```
 
 降级 numpy
